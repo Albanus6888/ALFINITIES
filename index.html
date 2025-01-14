@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALFINITY</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ALFINITY <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #4b74a6;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .left, .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .left {
+            gap: 10px;
+        }
+        .navbar .left img {
+            height: 30px;
+        }
+        .navbar .left .location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .navbar .left .location span {
+            color: #cccccc;
+        }
+        .navbar .right .menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .navbar .right .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar .right .menu a:hover {
+            text-decoration: underline;
+        }
+        .navbar .right .cart {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .navbar .right .cart span {
+            color: #f08804;
+        }
+        .search-bar {
+            display: flex;
+            flex-grow: 1;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+        .search-bar select {
+            padding: 10px;
+            border: none;
+            background: #F0F0F0;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background: #febd69;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img src="logo.jpg" alt="Amazon Logo">
+            <div class="location">
+                <span>&#x1F4CD;</span>
+                <span>Delivering 10004</span>
+            </div>
+        </div>
+        <div class="search-bar">
+            <select>
+                <option value="all">All</option>
+            </select>
+            <input type="text" placeholder="Search Infinities">
+            <button>🔍</button>
+        </div>
+        <div class="right">
+            <div class="menu">
+                <a href="#">EN</a>
+                <a href="#">Sign in</a>
+                <a href="#">Account & Lists</a>
+                <a href="#">Returns & Orders</a>
+            </div>
+            <div class="cart">
+                <span>&#x1F6D2;</span>
+                <span>Cart</span>
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+    <header>
+        <h1>ALFINITY</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showBooks()">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <h2>Discover Amazing Things</h2>
+            <p>Join us on a journey to explore the wonders of the world.</p>
+            <button id="learnMoreBtn">Learn More</button>
+        </section>
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="Image 1">
+                <div class="carousel-caption">Caption for Image 1</div>
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="Image 2">
+                <div class="carousel-caption">Caption for Image 2</div>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Great service and amazing products!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"I love this website. Highly recommend!"</p>
+                <p>- Jane Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+        <section id="blog">
+            <h2>Latest News</h2>
+            <article class="blog-post">
+                <h3>Post Title</h3>
+                <p>Post excerpt or summary...</p>
+                <a href="post.html">Read More</a>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Question 1?</h3>
+                <p>Answer to question 1.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Question 2?</h3>
+                <p>Answer to question 2.</p>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+                                        
+        <!-- Carousel Section -->
+        <section id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="slide1.jpeg" alt="Featured Book 1">
+                    <div class="carousel-caption">Featured Book 1</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide2.jpeg" alt="Featured Book 2">
+                    <div class="carousel-caption">Featured Book 2</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="slide3.jpeg" alt="Featured Book 3">
+                    <div class="carousel-caption">Featured Book 3</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Readers Say</h2>
+            <div class="testimonial">
+                <p>"This is the best online bookstore I've ever used!"</p>
+                <h4>- John Doe</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Great selection of books and excellent customer service."</p>
+                <h4>- Jane Smith</h4>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter">
+            <h2>Subscribe to our Newsletter</h2>
+            <form id="newsletterForm">
+                <label for="newsletterEmail">Email:</label>
+                <input type="email" id="newsletterEmail" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>Popular Categories</h2>
+            <div class="category">
+                <h3><a href="#">Fiction</a></h3>
+            </div>
+            <div class="category">
+                <h3><a href="#">Non-Fiction</a></h3>
+            </div>
+            <div class="category">
+                <h3><a href="#">Science</a></h3>
+            </div>
+            <div class="category">
+                <h3><a href="#">Biography</a></h3>
+            </div>
+        </section>
+
+        <!-- About Section -->
+<section id="about" style="display: none;">
+    <h2>About Us</h2>
+    <p>Welcome to our website! We are dedicated to providing the best content and services for our customers. Our team is passionate about delivering high-quality books and resources. Explore our collection and enjoy a seamless shopping experience.</p>
+    
+    <!-- Mission Statement -->
+    <h3>Our Mission</h3>
+    <p>Our mission is to inspire and nurture the human spirit – one person, one book, and one community at a time.</p>
+
+    <!-- Team Members -->
+    <h3>Meet Our Team</h3>
+    <div class="team-member">
+        <img src="John Doe.jpeg" alt="Team Member 1">
+        <h3>John Doe</h3>
+        <p>Founder & CEO</p>
+    </div>
+    <div class="team-member">
+        <img src="jane smith.jpeg" alt="Team Member 2">
+        <h3>Jane Smith</h3>
+        <p>Chief Operating Officer</p>
+    </div>
+    <div class="team-member">
+        <img src="emily.jpeg" alt="Team Member 3">
+        <h3>Emily Johnson</h3>
+        <p>Head of Marketing</p>
+    </div>
+
+    <!-- History and Milestones -->
+    <h3>Our History</h3>
+    <ul>
+        <li>2020: Company founded</li>
+        <li>2021: Launched our first online bookstore</li>
+        <li>2022: Reached 10,000 customers</li>
+        <li>2023: Expanded to international markets</li>
+    </ul>
+
+    <!-- Customer Testimonials -->
+    <h3>What Our Customers Say</h3>
+    <div class="testimonial">
+        <p>"This is the best online bookstore I've ever used!"</p>
+        <h4>- John Doe</h4>
+    </div>
+    <div class="testimonial">
+        <p>"Great selection of books and excellent customer service."</p>
+        <h4>- Jane Smith</h4>
+    </div>
+
+    <!-- Image Gallery -->
+    <h3>Our Journey</h3>
+    <div class="gallery">
+        <img src="bookgala1.jpeg" alt="Gallery Image 1">
+        <img src="bookgala2.jpeg" alt="Gallery Image 2">
+        <img src="bookgala 3.jpeg" alt="Gallery Image 3">
+    </div>
+
+    <!-- Contact Information -->
+    <h3>Contact Us</h3>
+    <p>If you have any questions, feel free to <a href="#contact">contact us</a>.</p>
+</section>
+
+
+     <!-- Services Section -->
+<section id="services" style="display: none;">
+    <h2>Our Services</h2>
+    
+    <!-- Service 1 -->
+    <div class="service">
+        <img src="freeshipping.png" alt="Free Shipping Icon">
+        <h2>Free Shipping on Orders Over $50</h2>
+       
+        <button onclick="alert('Learn more about Free Shipping')">Learn More</button>
+    </div>
+    
+    <!-- Service 2 -->
+    <div class="service">
+        <img src="customer.jpeg" alt="Customer Support Icon">
+        <h2>24/7 Customer Support</h2>
+        
+        <button onclick="alert('Learn more about Customer Support')">Get Help</button>
+    </div>
+    
+    <!-- Service 3 -->
+    <div class="service">
+        <img src="exclusive.jpeg" alt="Exclusive Discounts Icon">
+        <h2>Exclusive Discounts for Members</h2>
+       
+        <button onclick="alert('Learn more about Membership Discounts')">Join Now</button>
+    </div>
+    
+    <!-- Service 4 -->
+    <div class="service">
+        <img src="book club.jpeg" alt="Book Club Icon">
+        <h2>Monthly Book Club and Events</h2>
+        
+        <button onclick="alert('Learn more about Book Club and Events')">Sign Up</button>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" style="display: none;">
+    <h2>Contact Us</h2>
+    
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Address:</strong> 123 Book St, Reading City, RB 45678</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> contact@bookstore.com</p>
+    </div>
+    
+    <!-- Google Map -->
+    <div class="map-container">
+        <h3>Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.835434513985!2d-122.08424968469198!3d37.421999779821554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b5b5b5b5b5%3A0x1234567890abcdef!2sGoogleplex!5e0!3m2!1sen!2sus!4v1616004743441!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com"><img src="facebook_icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="twitter_icon.png" alt="Twitter"></a>
+        <a href="https://instagram.com"><img src="instagram_icon.png" alt="Instagram"></a>
+    </div>
+    
+    <!-- Operating Hours -->
+    <div class="hours">
+        <h3>Operating Hours</h3>
+        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+        <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+    </div>
+    
+    <!-- Live Chat Option -->
+    <div class="live-chat">
+        <h3>Live Chat</h3>
+        <button onclick="startLiveChat()">Chat Now</button>
+    </div>
+</section>
+
+        <!-- Books Section -->
+        <section id="books" style="display: none;">
+            <h2>Available Books</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for books...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="book">
+                <img src="book1.jpeg" alt="The Kite Runner">
+                <div class="book-details">
+                    <h3>The Kite Runner</h3>
+                    <p>Price: $10.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="book2.jpeg" alt="To Kill a Mockingbird">
+                <div class="book-details">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Price: $15.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="book">
+                <img src="book3.jpeg" alt="The Alchemist">
+                <div class="book-details">
+                    <h3>The Alchemist</h3>
+                    <p>Price: $12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration">
+            <h2>Register Here</h2>
+            <form id="registrationForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ALFINITY. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
